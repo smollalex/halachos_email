@@ -1,0 +1,68 @@
+@import "settings";
+@import "foundation-emails";
+
+@import "template/template";
+
+@media only screen and (max-width: 596px) {
+    table.body .mail-header {
+        height: 150px !important;
+    }
+}
+
+.mail {
+  border: 1px solid #eee;
+  margin: auto;
+  margin-bottom: 50px;
+
+  &-header {
+    background-image: url("../../assets/img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px !important;
+  }
+
+
+  h1 {
+    font: 45px/1.25 "SegoeUIBold", sans-serif;
+    color: #bf955d;
+    margin: 40px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  h2 {
+    font: 600 33px/1.25 "SegoeUIItalic", sans-serif;
+    color: #003266;
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+
+  p {
+    font: 22px/1.7 "SegoeUIRegular", sans-serif;
+    color: #5d5d5d;
+    padding: 0 50px;
+
+    @media only screen and (max-width: 596px) {
+        padding: 0 25px;
+    }
+  }
+
+  em {
+    font: 600 16px/1.25 "SegoeUIItalic", sans-serif;
+    color: #003266;
+    display: block;
+    margin-bottom: 20px;
+    font-style: italic;
+    padding: 0 25px;
+  }
+
+  .unsubscribe {
+    display: block;
+    color: #2658fb;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+ 
+}
